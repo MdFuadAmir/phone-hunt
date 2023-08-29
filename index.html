@@ -29,10 +29,29 @@
         <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         </div>
         <!-- show all button -->
-        <div id="show-All-container" class="hidden text-center" >
-          <button class="btn bg-rose-400 text-white">Show All </button>
+        <div id="show-All-container" class="hidden text-center my-8" >
+          <button onclick="handelShowAll()" class="btn bg-rose-400 text-white">Show All </button>
         </div>
       </section>
+
+      <!-- show detail modal -->
+
+      <!-- Open the modal using ID.showModal() method -->
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="show_detail_modal" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <h3 id="show-detail-phone-name" class="font-bold text-lg text-center my-4"></h3>
+
+    <div id="show-detail-container">
+
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
 
     </main>
 
