@@ -8,12 +8,31 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1 class="text-4xl text-center font-bold">Apple Iphone 13 Pro Max</h1>
-
+    <header class="my-12">
+        <h1 class="text-5xl text-center font-bold">Apple Iphone 13 Pro Max</h1>
     </header>
 
-    <main>
+    <main class="container mx-auto">
+      <!-- search section -->
+      <section class="bg-gray-100 p-4 mb-12 rounded-lg items-center text-center">
+        <input id="search-field" type="text" placeholder="Search..." class="input input-bordered input-accent w-full max-w-xs mr-4" />
+        <button onclick="handelSarch()" class="btn btn-accent text-white">Search</button>
+      </section>
+
+      <!-- spinner or loader -->
+
+      <!-- result section -->
+      <section>
+        <div id="loading-bars" class="text-center my-40 hidden">
+          <span class="loading loading-bars loading-lg text-primary"></span> 
+        </div>
+        <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+        <!-- show all button -->
+        <div id="show-All-container" class="hidden text-center" >
+          <button class="btn bg-rose-400 text-white">Show All </button>
+        </div>
+      </section>
 
     </main>
 
